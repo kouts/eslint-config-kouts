@@ -29,7 +29,8 @@ module.exports = {
 - Based on [eslint-config-standard](https://github.com/standard/eslint-config-standard)
 - [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) for parsing
 - Plugins
-  - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/) for Vue.js
+  - [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) for HTML files
+  - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/) for Vue.js files
 
 ## License
 

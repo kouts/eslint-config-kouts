@@ -5,8 +5,10 @@ module.exports = {
     browser: true
   },
   extends: [
-    'standard',
-    'plugin:vue/recommended'
+    'standard'
+  ],
+  plugins: [
+    'html'
   ],
   parserOptions: {
     parser: '@babel/eslint-parser',
@@ -41,11 +43,6 @@ module.exports = {
     // Console and debugger settings depending whether we're on production or not
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-
-    // Custom for vue/recommended preset
-    'vue/max-attributes-per-line': 'off',
-    'vue/html-self-closing': 'off',
-    'vue/singleline-html-element-content-newline': 'off',
 
     // Custom rules standard
     'space-before-function-paren': [
