@@ -1,0 +1,41 @@
+{
+  "name": "eslint-config-kouts",
+  "version": "1.0.0",
+  "description": "eslint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lint",
+    "vue",
+    "standard",
+    "eslint",
+    "eslintconfig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kouts/eslint-config-kouts.git"
+  },
+  "author": "kouts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kouts/eslint-config-kouts/issues"
+  },
+  "homepage": "https://github.com/kouts/eslint-config-kouts#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.9.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0"
+  }
+}
