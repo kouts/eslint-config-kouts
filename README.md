@@ -5,25 +5,30 @@
 ## Usage
 
 ```bash
+npm i -D eslint @babel/eslint-parser eslint-config-standard eslint-plugin-html eslint-plugin-import eslint-plugin-node eslint-plugin-promise@^4.3.1 eslint-plugin-vue
+```
+
+```bash
 npm i -D eslint-config-kouts
 ```
 
 Add it to your `.eslintrc.js` file:
 
-```json
-{
-  "extends": ["kouts"]
+```javascript
+module.exports = {
+  ...
+  extends: [
+    'eslint-config-kouts'
+  ]
+  ...
 }
 ```
-
-Feel free to fork and change 🙂
 
 ## Features
 
 - Based on [eslint-config-standard](https://github.com/standard/eslint-config-standard)
-- [babel-eslint](https://github.com/babel/babel-eslint) for parsing
+- [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) for parsing
 - Plugins
-  - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import/) for better control of `import`/`export` statements
   - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/) for Vue.js
 
 ## License
