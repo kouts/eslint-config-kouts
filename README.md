@@ -1,27 +1,46 @@
 # eslint-config-kouts
 
-> Custom eslint config with reasonable defaults
+> Custom ESLint config with reasonable defaults
 
 ## Usage
 
+### For ESLint
+
 ```bash
-npm i -D eslint @babel/eslint-parser eslint-config-standard eslint-plugin-html eslint-plugin-import eslint-plugin-node eslint-plugin-promise@^4.3.1 eslint-plugin-vue
+npm i -D eslint @babel/core @babel/eslint-parser eslint-config-standard eslint-plugin-html eslint-plugin-import eslint-plugin-node eslint-plugin-promise@^4.3.1 eslint-plugin-vue
 ```
 
 ```bash
 npm i -D eslint-config-kouts
 ```
 
-Add it to your `.eslintrc.js` file:
+There are 3 ESLint presets that you can use:
+- `eslint-config-kouts/base`
+- `eslint-config-kouts/vue2`
+- `eslint-config-kouts/vue3`
+
+Add the desired preset into your `.eslintrc.js` file:
 
 ```javascript
 module.exports = {
   ...
   extends: [
-    'eslint-config-kouts'
+    'eslint-config-kouts/vue2'
   ]
   ...
 }
+```
+
+### For Prettier
+
+```bash
+npm install --save-dev --save-exact prettier
+```
+
+Add a `prettier.config.js` with contents:
+
+```javascript
+module.exports = require('eslint-config-kouts/prettier.config.js')
 ```
 
 ## Features
@@ -31,6 +50,7 @@ module.exports = {
 - Plugins
   - [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) for HTML files
   - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/) for Vue.js files
+- [Prettier](https://prettier.io) for code formatting
 
 ## License
 
