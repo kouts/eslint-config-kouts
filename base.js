@@ -5,6 +5,7 @@ module.exports = {
     browser: true
   },
   extends: [
+    'eslint:recommended',
     'standard'
   ],
   plugins: [
@@ -14,14 +15,14 @@ module.exports = {
     parser: '@babel/eslint-parser',
     sourceType: 'module'
   },
-	ignorePatterns: [
-		'**/node_modules/**',
-		'{tmp,temp}/**',
-		'**/*.min.js',
-		'vendor/**',
-		'dist/**',
+  ignorePatterns: [
+    '**/node_modules/**',
+    '{tmp,temp}/**',
+    '**/*.min.js',
+    'vendor/**',
+    'dist/**',
     'public/**'
-	],  
+  ],
   overrides: [
     {
       'files': ['*.json'],
@@ -29,12 +30,12 @@ module.exports = {
         'quotes': [2, 'double']
       }
     },
-		{
-			files: ['*.spec.js'],
-			env: {
-				jest: true
-			}
-		}
+    {
+      files: ['*.spec.js'],
+      env: {
+        jest: true
+      }
+    }
   ],
   rules: {
     // Windows style line breaks
@@ -44,14 +45,15 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
 
-    // Custom rules standard
+    // Custom rules for standard
     'space-before-function-paren': [
       'error',
       {
-        anonymous: 'never',
+        anonymous: 'always',
         named: 'never',
         asyncArrow: 'always'
       }
-    ]
+    ],
+    'arrow-parens': ['error', 'always']
   }
 }
