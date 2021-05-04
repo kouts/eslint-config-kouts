@@ -29,7 +29,7 @@ module.exports = {
 }
 ```
 
-Add a `prettier.config.js` with contents:
+Add a `prettier.config.js` file with contents:
 
 ```javascript
 module.exports = require('eslint-config-kouts/prettier.config.js')
