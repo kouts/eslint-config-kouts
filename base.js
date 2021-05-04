@@ -1,3 +1,5 @@
+const configVars = require('./configVars.js')
+
 module.exports = {
   root: true,
   env: {
@@ -6,7 +8,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'standard'
+    'standard',
+    'plugin:prettier/recommended'
   ],
   plugins: [
     'html'
@@ -43,17 +46,6 @@ module.exports = {
 
     // Console and debugger settings depending whether we're on production or not
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-
-    // Custom rules for standard
-    'space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'always',
-        named: 'never',
-        asyncArrow: 'always'
-      }
-    ],
-    'arrow-parens': ['error', 'always']
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   }
 }

@@ -1,13 +1,12 @@
-const base = require.resolve('./base.js')
-
 module.exports = {
   extends: [
-    base,
-    'plugin:vue/vue3-recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+  ],
+  plugins: [
+    'prettier'
   ],
   rules: {
-    // Custom for vue/vue3-recommended preset
+    // Custom for vue/recommended preset
     'vue/max-attributes-per-line': 'off',
     'vue/html-self-closing': 'off',
     'vue/singleline-html-element-content-newline': 'off'
