@@ -1,6 +1,6 @@
 # eslint-config-kouts
 
-> Custom ESLint and Prettier config with reasonable defaults
+> Custom ESLint and Prettier config with sensible defaults
 
 ## Usage
 
