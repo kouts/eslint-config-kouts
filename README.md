@@ -38,8 +38,10 @@ module.exports = require('eslint-config-kouts/prettier.config.js')
 You can add ESLint commands to `.package-json`
 ```json
 {
+  ...
   "lint": "eslint . --ext .js,.vue",
   "lint-fix": "eslint . --fix --ext .js,.vue"
+  ...  
 }
 ```
 
