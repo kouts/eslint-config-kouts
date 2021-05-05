@@ -21,12 +21,18 @@ Add the desired config preset into your `.eslintrc.js` file:
 
 ```javascript
 module.exports = {
-  ...
   extends: [
     'eslint-config-kouts/vue2'
   ]
-  ...
 }
+```
+
+If your repo doesn't contain a Babel config file, you may have to
+add to your `.eslintrc.js` file
+```javascript
+  parserOptions: {
+    requireConfigFile: false
+  }
 ```
 
 Add a `prettier.config.js` file with contents:
@@ -38,10 +44,8 @@ module.exports = require('eslint-config-kouts/prettier.config.js')
 You can add ESLint commands to `.package-json`
 ```json
 {
-  ...
   "lint": "eslint . --ext .js,.vue",
   "lint-fix": "eslint . --fix --ext .js,.vue"
-  ...  
 }
 ```
 
