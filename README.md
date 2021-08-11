@@ -30,9 +30,9 @@ module.exports = {
 If your repo doesn't contain a Babel config file, you may have to
 add to your `.eslintrc.js` file
 ```javascript
-  parserOptions: {
-    requireConfigFile: false
-  }
+parserOptions: {
+  requireConfigFile: false
+}
 ```
 
 Add a `prettier.config.js` file with contents:
