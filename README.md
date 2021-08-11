@@ -58,7 +58,7 @@ You can add ESLint commands to `.package-json`
   - [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) for HTML files
   - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/) for Vue.js files
   - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) for disabling all rules that conflict with Prettier
-  - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) for using use prettier as a code formatter for `eslint --fix`
+  - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) for using prettier as a code formatter for `eslint --fix`
  
 ## License
 
