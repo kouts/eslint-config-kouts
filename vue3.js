@@ -1,6 +1,12 @@
 const base = require.resolve('./base.js')
 
 module.exports = {
+  env: {
+    'vue/setup-compiler-macros': true
+  },
+  parserOptions: {
+    parser: '@babel/eslint-parser',
+  },  
   extends: [
     base,
     'plugin:vue/vue3-recommended',

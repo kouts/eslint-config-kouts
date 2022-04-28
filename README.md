@@ -5,7 +5,7 @@
 ## Usage
 
 ```bash
-npm i -D eslint eslint-config-kouts eslint-config-standard eslint-plugin-html eslint-plugin-import eslint-plugin-node eslint-plugin-promise@^4.3.1 eslint-plugin-vue eslint-plugin-prettier eslint-config-prettier @babel/core @babel/eslint-parser
+npm i -D eslint eslint-config-kouts eslint-config-standard eslint-plugin-html eslint-plugin-import eslint-plugin-n eslint-plugin-promise eslint-plugin-vue eslint-plugin-prettier eslint-config-prettier eslint-plugin-sort-imports-es6-autofix @babel/core @babel/eslint-parser
 ```
 
 ```bash
@@ -13,7 +13,7 @@ npm i -D --save-exact prettier
 ```
 
 There are 3 ESLint config presets that you can use:
-- `eslint-config-kouts/base` for JavaScript projects
+- `eslint-config-kouts/javascript` for JavaScript projects
 - `eslint-config-kouts/vue2` for Vue.js 2 projects
 - `eslint-config-kouts/vue3` for Vue.js 3 projects
 
