@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kouts",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "eslint configuration",
   "main": "base.js",
   "files": [
@@ -8,6 +8,7 @@
     "javascript.js",
     "vue2.js",
     "vue3.js",
+    "vue3-typescript.js",
     "prettier.config.js",
     "configVars.js"
   ],
@@ -33,8 +34,8 @@
   },
   "homepage": "https://github.com/kouts/eslint-config-kouts#readme",
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.17.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -45,11 +46,13 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "eslint-plugin-vue": "^8.7.1",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3",
+    "vue-eslint-parser": "^8.3.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.17.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -60,6 +63,8 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "eslint-plugin-vue": "^8.7.1",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3",
+    "vue-eslint-parser": "^8.3.0"
   }
 }
