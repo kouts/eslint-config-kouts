@@ -17,7 +17,7 @@ npm i -D @typescript-eslint/parser @vue/eslint-config-typescript vue-eslint-pars
 ## Usage
 
 There are 4 ESLint config presets that you can use:
-- `eslint-config-kouts/javascript` for JavaScript/TypeScript projects
+- `eslint-config-kouts/javascript` for JavaScript / TypeScript projects
 - `eslint-config-kouts/vue2` for Vue.js 2 projects
 - `eslint-config-kouts/vue3` for Vue.js 3 projects
 - `eslint-config-kouts/vue3-typescript` for Vue.js 3 / TypeScript projects
