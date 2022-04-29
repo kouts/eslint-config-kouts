@@ -1,11 +1,12 @@
 {
   "name": "eslint-config-kouts",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "eslint configuration",
   "main": "base.js",
   "files": [
     "base.js",
     "javascript.js",
+    "vue.js",
     "vue2.js",
     "vue3.js",
     "vue3-typescript.js",
