@@ -7,7 +7,17 @@ module.exports = {
   extends: [
     base,
     'plugin:vue/vue3-recommended',
+    '@vue/eslint-config-typescript/recommended',
     'plugin:prettier/recommended'
+  ],
+  overrides: [
+    {
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser'
+      }
+    }
   ],
   rules: {
     // Custom for vue/vue3-recommended preset
