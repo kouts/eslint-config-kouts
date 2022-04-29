@@ -20,9 +20,19 @@ module.exports = {
     }
   ],
   rules: {
+    /* Vue 3 */
+
     // Custom for vue/vue3-recommended preset
     'vue/max-attributes-per-line': 'off',
     'vue/html-self-closing': 'off',
-    'vue/singleline-html-element-content-newline': 'off'
+    'vue/singleline-html-element-content-newline': 'off',
+
+    /* Typescript */
+
+    // Disable 'no-unused-vars' as TypeScript has its own version
+    'no-unused-vars': 'off',
+
+    // Prefer T[] instead of Array<T>
+    '@typescript-eslint/array-type': ['error', { default: 'array' }]
   }
 }
