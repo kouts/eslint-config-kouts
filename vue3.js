@@ -4,11 +4,7 @@ module.exports = {
   env: {
     'vue/setup-compiler-macros': true
   },
-  extends: [
-    base,
-    'plugin:vue/vue3-recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: [base, 'plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
   rules: {
     // Custom for vue/vue3-recommended preset
     'vue/max-attributes-per-line': 'off',

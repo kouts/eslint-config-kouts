@@ -4,12 +4,7 @@ module.exports = {
   env: {
     'vue/setup-compiler-macros': true
   },
-  extends: [
-    base,
-    'plugin:vue/vue3-recommended',
-    '@vue/eslint-config-typescript/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: [base, 'plugin:vue/vue3-recommended', '@vue/eslint-config-typescript/recommended', 'plugin:prettier/recommended'],
   overrides: [
     {
       files: ['*.vue'],

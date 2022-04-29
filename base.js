@@ -6,26 +6,14 @@ module.exports = {
     node: true,
     browser: true
   },
-  extends: [
-    'standard',
-  ],
-  plugins: [
-    'html',
-    'sort-imports-es6-autofix'
-  ],
-  ignorePatterns: [
-    '**/node_modules/**',
-    '{tmp,temp}/**',
-    '**/*.min.js',
-    'vendor/**',
-    'dist/**',
-    'public/**'
-  ],
+  extends: ['standard'],
+  plugins: ['html', 'sort-imports-es6-autofix'],
+  ignorePatterns: ['**/node_modules/**', '{tmp,temp}/**', '**/*.min.js', 'vendor/**', 'dist/**', 'public/**'],
   overrides: [
     {
-      'files': ['*.json'],
-      'rules': {
-        'quotes': [2, 'double']
+      files: ['*.json'],
+      rules: {
+        quotes: [2, 'double']
       }
     },
     {
@@ -42,8 +30,8 @@ module.exports = {
       {
         ignoreCase: false,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['all', 'single', 'multiple', 'none'],
-      },
+        memberSyntaxSortOrder: ['all', 'single', 'multiple', 'none']
+      }
     ],
 
     // Enforce blank lines between the given 2 kinds of statements
@@ -53,8 +41,8 @@ module.exports = {
       { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
       { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
       { blankLine: 'always', prev: 'directive', next: '*' },
-      { blankLine: 'any', prev: 'directive', next: 'directive' },
-    ],    
+      { blankLine: 'any', prev: 'directive', next: 'directive' }
+    ],
 
     // Console and debugger settings depending whether we're on production or not
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
