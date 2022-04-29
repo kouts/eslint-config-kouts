@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-npm i -D eslint prettier@2 eslint-config-kouts eslint-config-standard eslint-plugin-html eslint-plugin-import eslint-plugin-n 
+npm i -D eslint prettier@2 eslint-config-kouts eslint-config-standard eslint-plugin-html eslint-plugin-import eslint-plugin-n
 eslint-plugin-promise eslint-plugin-vue eslint-plugin-prettier eslint-config-prettier eslint-plugin-sort-imports-es6-autofix
 ```
 
@@ -14,9 +14,11 @@ For the Vue 3 TypeScript preset we need additionally:
 ```bash
 npm i -D @typescript-eslint/parser @vue/eslint-config-typescript vue-eslint-parser
 ```
+
 ## Usage
 
 There are 4 ESLint config presets that you can use:
+
 - `eslint-config-kouts/javascript` for JavaScript / TypeScript projects
 - `eslint-config-kouts/vue2` for Vue.js 2 projects
 - `eslint-config-kouts/vue3` for Vue.js 3 projects
@@ -26,9 +28,7 @@ Add the desired config preset into your `.eslintrc.js` file:
 
 ```javascript
 module.exports = {
-  extends: [
-    'eslint-config-kouts/vue2'
-  ]
+  extends: ['eslint-config-kouts/vue2']
 }
 ```
 
@@ -39,16 +39,18 @@ module.exports = require('eslint-config-kouts/prettier.config.js')
 ```
 
 You can add ESLint commands to `.package-json`
+
 ```json
 {
-  "lint": "eslint . --ext .js,.vue",
-  "lint-fix": "eslint . --fix --ext .js,.vue"
+  "lint": "eslint \"**/*.{vue,ts,js}\"",
+  "lint-fix": "eslint --fix \"**/*.{vue,ts,js}\""
 }
 ```
 
 and VS Code settings for autofix on save
 
 `.vscode/settings.json`
+
 ```json
 {
   "editor.formatOnSave": true,
@@ -68,7 +70,7 @@ and VS Code settings for autofix on save
   - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) for disabling all rules that conflict with Prettier
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) for using prettier as a code formatter for `eslint --fix`
   - [sort-imports-es6-autofix](https://github.com/marudor/eslint-plugin-sort-imports-es6-autofix) for auto-fixing imports order
- 
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
