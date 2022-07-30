@@ -34,6 +34,9 @@ module.exports = {
       }
     ],
 
+    // Enforce a new line after the imports section
+    'import/newline-after-import': ['error', { count: 1 }],
+
     // Enforce blank lines between the given 2 kinds of statements
     'padding-line-between-statements': [
       'error',
